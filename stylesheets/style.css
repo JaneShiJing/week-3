@@ -341,7 +341,7 @@ header nav li a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  border: 10px solid #6e6e6e;
+  border: 10px solid #5353C6;
   border-radius: 100%;
   clip: rect(0, auto, auto, 60px);
   z-index: 3;
@@ -357,12 +357,12 @@ header nav li a:hover {
 /* line 319, ../sass/style.scss */
 .skills ul li .chart .c40 {
   transform: rotate(126deg);
-  border-color: #b3b3b3;
+  border-color: #c6c6ec;
 }
 /* line 324, ../sass/style.scss */
 .skills ul li .chart .c30 {
   transform: rotate(108deg);
-  border-color: #b3b3b3;
+  border-color: #c6c6ec;
 }
 /* line 328, ../sass/style.scss */
 .skills ul li .chart .text {
@@ -377,7 +377,7 @@ header nav li a:hover {
   bottom: 0;
   left: 0;
   border-radius: 100%;
-  border: 10px solid #b3b3b3;
+  border: 10px solid #c6c6ec;
   z-index: 1;
 }
 /* line 345, ../sass/style.scss */
@@ -389,7 +389,7 @@ header nav li a:hover {
   bottom: 0;
   left: 0;
   border-radius: 100%;
-  border: 10px solid #6e6e6e;
+  border: 10px solid #5353C6;
   z-index: 2;
   clip: rect(0, auto, auto, 60px);
 }
@@ -609,11 +609,16 @@ header nav li a:hover {
 /* line 650, ../sass/style.scss */
 .contact ul li a {
   text-decoration: none;
-}
-/* line 652, ../sass/style.scss */
-.contact ul li a i {
   display: block;
   font-size: 3em;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  color: #3e3e3e;
+}
+/* line 662, ../sass/style.scss */
+.contact ul li a i {
+  display: block;
   border-radius: 100%;
   border: 2px solid;
   width: 80px;
@@ -621,44 +626,43 @@ header nav li a:hover {
   line-height: 80px;
   color: #3e3e3e;
   opacity: 0.6;
-  transition: all .2s ease-in-out;
 }
-/* line 664, ../sass/style.scss */
+/* line 674, ../sass/style.scss */
 .contact ul li a i:hover {
   opacity: 1;
 }
-/* line 668, ../sass/style.scss */
+/* line 678, ../sass/style.scss */
 .contact ul li a .icon-linkedin {
   color: white;
   background-color: #4875b4;
 }
-/* line 673, ../sass/style.scss */
+/* line 683, ../sass/style.scss */
 .contact ul li a .icon-github {
   color: white;
   background-color: #3e3e3e;
 }
-/* line 679, ../sass/style.scss */
+/* line 689, ../sass/style.scss */
 .contact ul li a .icon-googleplus {
   color: white;
   background-color: #e74c3c;
 }
-/* line 684, ../sass/style.scss */
+/* line 694, ../sass/style.scss */
 .contact ul li a .icon-facebook {
   color: white;
   background-color: #3b5998;
 }
-/* line 689, ../sass/style.scss */
+/* line 699, ../sass/style.scss */
 .contact ul li a .icon-twitter {
   color: white;
   background-color: #39a9e0;
 }
-/* line 701, ../sass/style.scss */
+/* line 711, ../sass/style.scss */
 .contact .arrow {
   text-decoration: none;
   color: #6e6e6e;
   transition: all .2s ease-in-out;
 }
-/* line 704, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
 .contact .arrow i {
   display: block;
   font-size: 2em;
@@ -671,12 +675,12 @@ header nav li a:hover {
   height: 40px;
   line-height: 40px;
 }
-/* line 718, ../sass/style.scss */
+/* line 728, ../sass/style.scss */
 .contact .arrow:hover {
   color: #FFF;
 }
 
-/* line 723, ../sass/style.scss */
+/* line 733, ../sass/style.scss */
 footer {
   width: 100%;
   height: 50px;
@@ -684,83 +688,144 @@ footer {
   font-size: 1.5em;
   background-color: #FFF;
 }
-/* line 729, ../sass/style.scss */
+/* line 739, ../sass/style.scss */
 footer a {
   text-decoration: none;
   color: #3e3e3e;
   margin-left: 10px;
   transition: all .2s ease-in-out;
 }
-/* line 737, ../sass/style.scss */
+/* line 747, ../sass/style.scss */
 footer a:hover {
   color: #5353C6;
 }
 
 @media screen and (max-width: 1000px) {
-  /* line 750, ../sass/style.scss */
+  /* line 760, ../sass/style.scss */
   .portfolio ul li {
     width: 100%;
   }
 
-  /* line 757, ../sass/style.scss */
+  /* line 767, ../sass/style.scss */
   header span {
     width: 38%;
   }
-  /* line 760, ../sass/style.scss */
+  /* line 770, ../sass/style.scss */
   header nav {
     width: 62%;
   }
 }
 @media screen and (max-width: 900px) {
-  /* line 772, ../sass/style.scss */
+  /* line 782, ../sass/style.scss */
   .skills ul li {
     width: 50%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 788, ../sass/style.scss */
-  .contact ul li a i {
+  /* line 797, ../sass/style.scss */
+  .contact ul li a {
     font-size: 2.2em;
+  }
+  /* line 799, ../sass/style.scss */
+  .contact ul li a i {
     width: 60px;
     height: 60px;
     line-height: 60px;
   }
 
-  /* line 806, ../sass/style.scss */
+  /* line 812, ../sass/style.scss */
+  .about .sectionname {
+    position: relative;
+  }
+  /* line 815, ../sass/style.scss */
+  .about .sectionname::after {
+    left: 25%;
+  }
+  /* line 818, ../sass/style.scss */
+  .about .sectionname::before {
+    right: 25%;
+  }
+
+  /* line 825, ../sass/style.scss */
+  .skills .sectionname {
+    position: relative;
+  }
+  /* line 828, ../sass/style.scss */
+  .skills .sectionname::after {
+    left: 25%;
+  }
+  /* line 831, ../sass/style.scss */
+  .skills .sectionname::before {
+    right: 25%;
+  }
+
+  /* line 838, ../sass/style.scss */
+  .portfolio .sectionname {
+    position: relative;
+  }
+  /* line 841, ../sass/style.scss */
+  .portfolio .sectionname::after {
+    left: 20%;
+  }
+  /* line 844, ../sass/style.scss */
+  .portfolio .sectionname::before {
+    right: 20%;
+  }
+
+  /* line 851, ../sass/style.scss */
+  .contact .sectionname {
+    position: relative;
+  }
+  /* line 854, ../sass/style.scss */
+  .contact .sectionname::after {
+    left: 22%;
+  }
+  /* line 857, ../sass/style.scss */
+  .contact .sectionname::before {
+    right: 22%;
+  }
+
+  /* line 864, ../sass/style.scss */
   header span {
     width: 20%;
     font-size: 2.2em;
   }
-  /* line 811, ../sass/style.scss */
+  /* line 869, ../sass/style.scss */
   header nav {
     width: 80%;
     font-size: 0.8em;
   }
-  /* line 814, ../sass/style.scss */
+  /* line 872, ../sass/style.scss */
   header nav li {
     float: right;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 827, ../sass/style.scss */
+  /* line 885, ../sass/style.scss */
   .skills ul li {
     width: 100%;
   }
 
-  /* line 835, ../sass/style.scss */
+  /* line 893, ../sass/style.scss */
   .contact ul li {
     width: 100%;
+    text-align: center;
   }
-  /* line 838, ../sass/style.scss */
-  .contact ul li a i {
+  /* line 896, ../sass/style.scss */
+  .contact ul li a {
+    margin: 0 atuo;
     font-size: 4em;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+  }
+  /* line 899, ../sass/style.scss */
+  .contact ul li a i {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 560px) {
-  /* line 855, ../sass/style.scss */
+  /* line 915, ../sass/style.scss */
   header span {
     width: 100%;
     font-size: 3em;
@@ -773,7 +838,7 @@ footer a:hover {
   font-weight: normal;
   font-style: normal;
 }
-/* line 884, ../sass/style.scss */
+/* line 944, ../sass/style.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -787,67 +852,67 @@ footer a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 898, ../sass/style.scss */
+/* line 958, ../sass/style.scss */
 .icon-profile:before {
   content: "\e600";
 }
 
-/* line 901, ../sass/style.scss */
+/* line 961, ../sass/style.scss */
 .icon-phone:before {
   content: "\e601";
 }
 
-/* line 904, ../sass/style.scss */
+/* line 964, ../sass/style.scss */
 .icon-envelope:before {
   content: "\e602";
 }
 
-/* line 907, ../sass/style.scss */
+/* line 967, ../sass/style.scss */
 .icon-mobile:before {
   content: "\e603";
 }
 
-/* line 910, ../sass/style.scss */
+/* line 970, ../sass/style.scss */
 .icon-arrow-right:before {
   content: "\e604";
 }
 
-/* line 913, ../sass/style.scss */
+/* line 973, ../sass/style.scss */
 .icon-googleplus:before {
   content: "\e605";
 }
 
-/* line 916, ../sass/style.scss */
+/* line 976, ../sass/style.scss */
 .icon-facebook:before {
   content: "\e609";
 }
 
-/* line 919, ../sass/style.scss */
+/* line 979, ../sass/style.scss */
 .icon-twitter:before {
   content: "\e60a";
 }
 
-/* line 922, ../sass/style.scss */
+/* line 982, ../sass/style.scss */
 .icon-github:before {
   content: "\e606";
 }
 
-/* line 925, ../sass/style.scss */
+/* line 985, ../sass/style.scss */
 .icon-skype:before {
   content: "\e607";
 }
 
-/* line 928, ../sass/style.scss */
+/* line 988, ../sass/style.scss */
 .icon-linkedin:before {
   content: "\e608";
 }
 
-/* line 931, ../sass/style.scss */
+/* line 991, ../sass/style.scss */
 .icon-arrow-down:before {
   content: "\e60b";
 }
 
-/* line 934, ../sass/style.scss */
+/* line 994, ../sass/style.scss */
 .icon-arrow-up:before {
   content: "\e60c";
 }

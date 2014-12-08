@@ -301,7 +301,7 @@ header{
 					right:0;
 					bottom: 0;
 					left: 0;
-					border:10px solid $gray-text-color;
+					border:10px solid #5353C6;
 					border-radius: 100%;
 					clip: rect(0, auto, auto,60px);
 					z-index: 3;
@@ -318,12 +318,12 @@ header{
 
 				.c40{
 					transform:rotate(126deg);
-					border-color: darken(#CCCCCC, 10%);
+					border-color: lighten(#5353C6, 30%);
 				}
 
 				.c30{
 					transform:rotate(108deg);
-					border-color: darken(#CCCCCC, 10%);
+					border-color: lighten(#5353C6, 30%);
 				}
 				.text{
 					font-size: 2em;
@@ -337,7 +337,7 @@ header{
 						bottom: 0;
 						left: 0;
 						border-radius: 100%;
-						border:10px solid darken(#CCCCCC, 10%);
+						border:10px solid lighten(#5353C6, 30%);
 						z-index: 1;
 						//background-color: $title-color;
 				}
@@ -350,7 +350,7 @@ header{
 						bottom: 0;
 						left: 0;
 						border-radius: 100%;
-						border:10px solid $gray-text-color;
+						border:10px solid #5353C6;
 						z-index: 2;
 						clip: rect(0,auto,auto,60px);
 						//background-color: $title-color;
@@ -649,9 +649,19 @@ header{
 				margin-top: 30px;
 				a{
 					text-decoration: none;
+					display: block;
+					font-size: 3em;
+					//border-radius: 100%;
+					//border: 2px solid;
+					width: 90px;
+					height: 90px;
+					line-height: 90px;
+					color: $text-color;
+					//opacity:0.6;
+					//transition: all .2s ease-in-out;
 					i{
 						display: block;
-						font-size: 3em;
+						//font-size: 3em;
 						border-radius: 100%;
 						border: 2px solid;
 						width: 80px;
@@ -659,7 +669,7 @@ header{
 						line-height: 80px;
 						color: $text-color;
 						opacity:0.6;
-						transition: all .2s ease-in-out;
+						// transition: all .2s ease-in-out;
 					}
 					i:hover{
 						//color:$title-color;
@@ -785,8 +795,8 @@ footer{
 			li{
 				//width: 0%;
 				a{
-					i{
 					font-size: 2.2em;
+					i{
 					//border: 2px solid;
 					width: 60px;
 					height: 60px;
@@ -798,8 +808,56 @@ footer{
 	}
 
 
-	.sectionname{
-		//background-color: black;
+	.about{
+		.sectionname{
+		position: relative;
+
+		&::after{
+				left: 25%;
+			}
+		&::before{
+				right: 25%;
+			}
+		}
+	}
+
+	.skills{
+		.sectionname{
+		position: relative;
+
+		&::after{
+				left: 25%;
+			}
+		&::before{
+				right: 25%;
+			}
+		}
+	}
+
+	.portfolio{
+		.sectionname{
+		position: relative;
+
+		&::after{
+				left: 20%;
+			}
+		&::before{
+				right: 20%;
+			}
+		}
+	}
+
+	.contact{
+		.sectionname{
+		position: relative;
+
+		&::after{
+				left: 22%;
+			}
+		&::before{
+				right: 22%;
+			}
+		}
 	}
 
 	header{
@@ -834,13 +892,15 @@ footer{
 		ul{
 			li{
 				width: 100%;
-				a{
-					i{
+				text-align: center;
+				a{	
+					margin: 0 atuo;
 					font-size: 4em;
-					//border: 2px solid;
-					width: 100px;
-					height: 100px;
-					line-height: 100px;
+					i{
+						width: 80px;
+						height: 80px;
+						line-height: 80px;
+						margin: 0 auto;
 					}
 				}
 			}
